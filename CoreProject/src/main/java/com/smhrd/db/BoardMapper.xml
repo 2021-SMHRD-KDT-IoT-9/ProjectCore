@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.db.BoardMapper">
+	<insert id="upload" parameterType="WebBoard">
+		insert into web_board values (num_board.nextval, #{title},
+		#{filename}, #{content}, sysdate, #{writer})
+	</insert>
+	
+	<select id="boardAll" resultType="WebBoard">
+		select * from web_board order by b_date desc
+	</select>
+	
+	<select id="board" parameterType="int" resultType="WebBoard" >
+		select * from web_board where num=#{num}
+	</select>
+
+</mapper>
+

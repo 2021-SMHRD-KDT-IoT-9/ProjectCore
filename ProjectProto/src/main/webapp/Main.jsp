@@ -35,7 +35,7 @@ div>button {
 				<td><a href="Login.jsp">로그인 화면으로</a></td>
 			</tr>
 			<tr>
-				<td><a href="join.jsp">회원가입 화면으로</a></td>
+				<td><a href="Join.jsp">회원가입 화면으로</a></td>
 			</tr>
 		</table>
 	</fieldset>

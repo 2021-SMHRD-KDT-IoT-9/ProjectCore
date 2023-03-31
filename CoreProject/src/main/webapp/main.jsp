@@ -1,4 +1,3 @@
-
 <%@page import="java.util.List"%>
 <%@page import="com.smhrd.model.WebMessageDAO"%>
 <%@page import="com.smhrd.model.WebMember"%>

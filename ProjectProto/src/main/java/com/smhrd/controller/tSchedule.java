@@ -19,7 +19,7 @@ public class tSchedule extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		
 		// 스케줄 이름
-		String t_scheduleName = request.getParameter("scheduleName");
+		String t_concentName = request.getParameter("concentName");
 		
 		// 설정할 기기이름
 		String t_appliance = request.getParameter("appliance");
@@ -27,13 +27,13 @@ public class tSchedule extends HttpServlet {
 		// 날짜
 		String t_date = request.getParameter("date");
 		
-		// ON 시간 ---> 데이터타입 고민.......
-		String t_onTime = request.getParameter("onTime");
+		// 설정 시간
+		String t_time = request.getParameter("time");
 		
-		// OFF 시간  ---> 데이터타입 고민.......
-		String t_offTime = request.getParameter("offTime");
+		// ON/OFF 시간  ---> 데이터타입 고민.......
+		String t_onOff = request.getParameter("onOff");
 		
-		ScheduleVO vo = new ScheduleVO(t_scheduleName, t_appliance, t_date, t_onTime, t_offTime);
+		ScheduleVO vo = new ScheduleVO(t_concentName, t_appliance, t_date, t_time, t_onOff);
 		ScheduleDAO dao = new ScheduleDAO();
 		int cnt = dao.tSchedule(vo);
 		

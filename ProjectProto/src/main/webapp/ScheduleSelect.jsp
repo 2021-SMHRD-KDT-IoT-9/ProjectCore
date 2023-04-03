@@ -42,11 +42,9 @@ div>button {
 
 		<table>		
 			<tr>
-				<td>스케줄 이름</td>
+				<td>콘센트 이름</td>
 				<td></td>	
-			</tr>
-		
-			
+			</tr>			
 			<tr>
 				<td>설정한 기기</td>
 				<td></td>
@@ -56,11 +54,11 @@ div>button {
 				<td></td>
 			</tr>
 			<tr>
-				<td>ON 시간</td>
+				<td>시간</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td>OFF 시간</td>
+				<td>ON/OFF 확인</td>
 				<td></td>
 			</tr>
 		</table>

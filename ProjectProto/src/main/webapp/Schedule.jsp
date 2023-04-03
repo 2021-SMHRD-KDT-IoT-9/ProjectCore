@@ -29,8 +29,8 @@ table {
 
 			<table>
 				<tr>
-					<td>콘센트 이름</td>
-					<td><input type="text" name="scheduleName"></td>
+					<td>콘센트 ID</td>
+					<td><input type="text" name="t_conid"></td>
 				</tr>
 			
 				<tr>
@@ -46,7 +46,7 @@ table {
 			
 				<tr>
 					<td>날짜 지정하기</td>
-					<td><input type="date" name="date"></td>
+					<td><input type="date" name="t_date"></td>
 				</tr>
 				<tr>
 					<td colspan="2">시간 지정하기</td>
@@ -54,12 +54,17 @@ table {
 				</tr>
 				<tr>
 					<td>설정 시간</td>
-					<td><input type="time" name="onTime" value="09:00:00"></td>
+					<td><input type="time" name="t_time" value="09:00:00"></td>
 				</tr>
 				<tr>
 					<td>ON/OFF 설정</td>
-					<td>ON<input type="radio" name="onOff" value="1"></td>
-					<td>OFF<input type="radio" name="onOff" value="0"></td>
+					<td>ON<input type="radio" name="t_onOff" value="1"></td>
+					<td>OFF<input type="radio" name="t_onOff" value="0"></td>
+				</tr>
+				
+				<tr>
+					<td>메시지 설정</td>
+					<td><input type="text" name="t_message"></td>
 				</tr>
 				
 				

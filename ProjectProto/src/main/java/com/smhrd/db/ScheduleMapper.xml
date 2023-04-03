@@ -3,14 +3,14 @@
 <mapper namespace="com.smhrd.db.ScheduleMapper">
 
 	<!-- 스케줄 등록 -->
-	<insert id="t_schedule" parameterType="com.smhrd.model.ScheduleVO">
+	<insert id="t_alarm" parameterType="com.smhrd.model.ScheduleVO">
 										<!-- ScheduleVO 필드명 그대로!! -->
-		insert into t_schedule values(#{t_scheduleName},#{t_appliance},#{t_date},#{t_onTime},#{t_offTime})
+		insert into t_alarm values(#{t_date},#{t_conid},#{t_message},#{t_onOff},#{t_time})
 	</insert>
 	
 	<!-- 스케줄 조회 -->
-	<select id="t_scheduleSelect" resultType="com.smhrd.model.ScheduleVO">
-		select * from t_schedule
+	<select id="t_alarmSelect" resultType="com.smhrd.model.ScheduleVO">
+		select * from t_alarm
 	</select>
 
 </mapper>

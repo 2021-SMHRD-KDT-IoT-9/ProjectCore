@@ -11,10 +11,10 @@ public class ScheduleDAO {
 	private static SqlSessionFactory sqlSessionFactory = SqlSessionManager.getSessionFactory();
 	
 	// t-Schedule 스케줄 등록
-	public int tSchedule(ScheduleVO vo) {
+	public int t_alarm(ScheduleVO vo) {
 		SqlSession session = sqlSessionFactory.openSession(true);
 		// true는 오토커밋, 기본값은 false임
-		int cnt = session.insert("t_schedule", vo);
+		int cnt = session.insert("t_alarm", vo);
 		session.close();
 		return cnt;
 	}

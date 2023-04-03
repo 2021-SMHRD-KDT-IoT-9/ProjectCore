@@ -1,3 +1,6 @@
+<%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
+<%@page import="com.smhrd.model.ScheduleVO"%>
+<%@page import="java.util.List"%>
 <%@page import="com.smhrd.model.ScheduleDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -23,6 +26,13 @@ div>button {
 </style>
 </head>
 <body>
+	<%
+		ScheduleDAO dao= new ScheduleDAO();
+		// 오류↓
+		List<ScheduleVO> list = dao.tScheduleSelect();		
+	%>
+
+
 	<h2>Test Success</h2>
 
 	<fieldset>
@@ -33,8 +43,10 @@ div>button {
 		<table>		
 			<tr>
 				<td>스케줄 이름</td>
-				<td></td>
+				<td></td>	
 			</tr>
+		
+			
 			<tr>
 				<td>설정한 기기</td>
 				<td></td>

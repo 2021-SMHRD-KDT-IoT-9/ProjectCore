@@ -35,7 +35,7 @@ div>button {
 				<td><a href="Schedule.jsp">스케줄 등록하기</a></td>
 			</tr>
 			<tr>
-				<td><a href="ScheduleCheck.jsp">스케줄 확인하기</a></td>
+				<td><a href="tScheduleSelect.jsp">스케줄 확인하기</a></td>
 			</tr>
 			
 			

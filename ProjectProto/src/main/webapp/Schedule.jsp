@@ -29,7 +29,7 @@ table {
 
 			<table>
 				<tr>
-					<td>스케줄 이름</td>
+					<td>콘센트 이름</td>
 					<td><input type="text" name="scheduleName"></td>
 				</tr>
 			
@@ -53,13 +53,13 @@ table {
 					<td></td>
 				</tr>
 				<tr>
-					<td>ON</td>
+					<td>설정 시간</td>
 					<td><input type="time" name="onTime" value="09:00:00"></td>
 				</tr>
-				
 				<tr>
-					<td>OFF</td>
-					<td><input type="time" name="offTime" value="09:00:00"></td>
+					<td>ON/OFF 설정</td>
+					<td>ON<input type="radio" name="onOff" value="1"></td>
+					<td>OFF<input type="radio" name="onOff" value="0"></td>
 				</tr>
 				
 				

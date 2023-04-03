@@ -14,7 +14,7 @@ public class ScheduleVO {
 		this.t_message = t_message;
 		this.t_date = t_date;
 		this.t_time = t_time;
-		this.t_onOff = t_onOff;
+		this.t_onOff = t_onOff; 
 	}
 
 	public String getT_conid() {

@@ -2,63 +2,54 @@ package com.smhrd.model;
 
 public class ScheduleVO {
 
-	private String scheduleName;
-	private String appliance;
-	private String date;
-	private String onTime;
-	private String offTime;
+	private String t_scheduleName;
+	private String t_appliance;
+	private String t_date;
+	private String t_onTime;
+	private String t_offTime;	
 	
-	
-	
-	public ScheduleVO(String scheduleName, String appliance, String date, String onTime, String offTime) {
+	public ScheduleVO(String t_scheduleName, String t_appliance, String t_date, String t_onTime, String t_offTime) {
 		super();
-		this.scheduleName = scheduleName;
-		this.appliance = appliance;
-		this.date = date;
-		this.onTime = onTime;
-		this.offTime = offTime;
+		this.t_scheduleName = t_scheduleName;
+		this.t_appliance = t_appliance;
+		this.t_date = t_date;
+		this.t_onTime = t_onTime;
+		this.t_offTime = t_offTime;
+	}
+	// getter
+	public String getT_scheduleName() {
+		return t_scheduleName;
+	}
+	public String getT_appliance() {
+		return t_appliance;
+	}
+	public String getT_date() {
+		return t_date;
+	}
+	public String getT_onTime() {
+		return t_onTime;
+	}
+	public String getT_offTime() {
+		return t_offTime;
 	}
 	
 	
-	public void setScheduleName(String scheduleName) {
-		this.scheduleName = scheduleName;
+	
+	// setter
+	public void setT_scheduleName(String t_scheduleName) {
+		this.t_scheduleName = t_scheduleName;
 	}
-	public void setAppliance(String appliance) {
-		this.appliance = appliance;
+	public void setT_appliance(String t_appliance) {
+		this.t_appliance = t_appliance;
 	}
-	public void setDate(String date) {
-		this.date = date;
+	public void setT_date(String t_date) {
+		this.t_date = t_date;
 	}
-	public void setOnTime(String onTime) {
-		this.onTime = onTime;
+	public void setT_onTime(String t_onTime) {
+		this.t_onTime = t_onTime;
 	}
-	public void setOffTime(String offTime) {
-		this.offTime = offTime;
-	}
-
-
-	public String getScheduleName() {
-		return scheduleName;
-	}
-
-
-	public String getAppliance() {
-		return appliance;
-	}
-
-
-	public String getDate() {
-		return date;
-	}
-
-
-	public String getOnTime() {
-		return onTime;
-	}
-
-
-	public String getOffTime() {
-		return offTime;
+	public void setT_offTime(String t_offTime) {
+		this.t_offTime = t_offTime;
 	}
 	
 	

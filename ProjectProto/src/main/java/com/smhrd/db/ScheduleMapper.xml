@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.smhrd.db.ScheduleMapper">
-	
-	<insert id="tSchedule" parameterType="com.smhrd.model.ScheduleVO">
-		insert into t_schedule values(#{scheduleName},#{appliance},#{date},#{onTime},#{offTime})
+
+	<insert id="t_schedule" parameterType="com.smhrd.model.ScheduleVO">
+										<!-- ScheduleVO 필드명 그대로!! -->
+		insert into t_schedule values(#{t_scheduleName},#{t_appliance},#{t_date},#{t_onTime},#{t_offTime})
 	</insert>
+	
+	
+	<select id="t_scheduleCheck" parameterType="com.smhrd.model.MemberVO"
+		resultType="com.smhrd.model.MemberVO">
+		select * from t_schedule where t_scheduleName=#{t_scheduleName}
+	</select>
 
 </mapper>

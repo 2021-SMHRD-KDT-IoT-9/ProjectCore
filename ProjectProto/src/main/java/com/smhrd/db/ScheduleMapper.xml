@@ -2,15 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.smhrd.db.ScheduleMapper">
 
-	<!-- 스케줄 등록 -->
-	<insert id="t_schedule" parameterType="com.smhrd.model.ScheduleVO">
-										<!-- ScheduleVO 필드명 그대로!! -->
-		insert into t_alarm values(#{t_conid},#{t_conid},#{t_date},#{t_time},#{t_onOff})
-	</insert>
-	
-	<!-- 스케줄 조회 -->
-	<select id="t_scheduleSelect" resultType="com.smhrd.model.ScheduleVO">
-		select * from t_alarm
-	</select>
+   <!-- 스케줄 등록 -->
+   <insert id="t_alarm" parameterType="com.smhrd.model.ScheduleVO">
+                              <!-- ScheduleVO 필드명 그대로!! -->
+      insert into t_alarm values(#{t_date},#{t_conid},#{t_message},#{t_onOff},#{t_time})
+   </insert>
+   
+   <!-- 스케줄 조회 -->
+   <select id="t_alarmAll" resultType="com.smhrd.model.ScheduleVO">
+      select * from t_alarm
+   </select>
 
 </mapper>

@@ -13,28 +13,28 @@ import com.smhrd.model.MemberVO;
 
 @WebServlet("/tJoin")
 public class tJoin extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+   private static final long serialVersionUID = 1L;
 
 
-	protected void service(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		
-		request.setCharacterEncoding("UTF-8");
-	
-		String id = request.getParameter("id");
-		String pw = request.getParameter("pw");
-		
-		MemberVO vo = new MemberVO(id, pw);
+   protected void service(HttpServletRequest request, HttpServletResponse response)
+         throws ServletException, IOException {
+      
+      request.setCharacterEncoding("UTF-8");
+   
+      String id = request.getParameter("id");
+      String pw = request.getParameter("pw");
+      
+      MemberVO vo = new MemberVO(id, pw);
 
-		MemberDAO dao = new MemberDAO();
-		int cnt = dao.tjoin(vo);
+      MemberDAO dao = new MemberDAO();
+      int cnt = dao.tjoin(vo);
 
-		if (cnt > 0) {
-			System.out.println("회원가입 성공!");
-			response.sendRedirect("Login.jsp");
-		} else {
-			System.out.println("회원가입 실패...");
-			response.sendRedirect("Join.jsp");
-		}
-	}
+      if (cnt > 0) {
+         System.out.println("회원가입 성공!");
+         response.sendRedirect("Login.jsp");
+      } else {
+         System.out.println("회원가입 실패...");
+         response.sendRedirect("Join.jsp");
+      }
+   }
 }

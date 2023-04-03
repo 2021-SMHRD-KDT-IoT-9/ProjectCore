@@ -8,20 +8,20 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class SqlSessionManager {
 
-	private static SqlSessionFactory sqlSessionFactory;
+   private static SqlSessionFactory sqlSessionFactory;
 
-	static {
+   static {
 
-		try {
-			String resource = "com/smhrd/db/config.xml";
-			InputStream inputStream = Resources.getResourceAsStream(resource);
-			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+      try {
+         String resource = "com/smhrd/db/config.xml";
+         InputStream inputStream = Resources.getResourceAsStream(resource);
+         sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
+   }
 
-	public static SqlSessionFactory getSessionFactory() {
-		return sqlSessionFactory;
-	}
+   public static SqlSessionFactory getSessionFactory() {
+      return sqlSessionFactory;
+   }
 }

@@ -5,13 +5,23 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-  	<servlet-name>Test</servlet-name>
-  	<display-name>Test</display-name>
-  	<description></description>
-  	<servlet-class>com.Test</servlet-class>
+     <servlet-name>Test</servlet-name>
+     <display-name>Test</display-name>
+     <description></description>
+     <servlet-class>com.Test</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>tSchedule</servlet-name>
+     <display-name>tSchedule</display-name>
+     <description></description>
+     <servlet-class>com.smhrd.controller.tSchedule</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>Test</servlet-name>
-  	<url-pattern>/Test</url-pattern>
+     <servlet-name>Test</servlet-name>
+     <url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+     <servlet-name>tSchedule</servlet-name>
+     <url-pattern>/tSchedule</url-pattern>
   </servlet-mapping>
 </web-app>

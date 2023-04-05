@@ -283,72 +283,65 @@
 <!-- 메인페이지 -->
 <main>
   <!-- 헤더 -->
-  
+
+
 <section class="container-fluid"> 
-    
-  <header>
-    <div class="px-3 py-2 text-white" style="background-color: #b5e48c;">  <!--헤더 색상-->
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> <!--로고아이콘-->
-          </a>
-          
-          <!--메뉴바-->
-         
-          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-            <li>
-              <a href="#" class="nav-link text-white"> <!--'제어'글씨 색상변경, 연결링크-->
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg> <!--제어 아이콘-->
-                제어
-              </a>
+  <!-- 네비게이션 바(햄버거) -->
+  <div>
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/schedule_list.html">스케줄</a>
             </li>
-            <li>
-              <a href="#" class="nav-link text-white"><!--'스케줄'글씨 색상변경, 연결링크-->
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg> <!-- 스네줄 아이콘-->
-                스케줄
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="/myConcent.html">콘센트</a>
             </li>
-            <li>
-              <a href="#" class="nav-link text-white"><!--'콘센트'글씨 색상변경, 연결링크-->
-                <svg class="bi d-block bi-plug-fill mx-auto mb-1" width="24" height="24"><use xlink:href="#plug-fill"/></svg><!-- 콘센트 아이콘-->
-                콘센트
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                MY
               </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white"><!--'메세지'글씨 색상변경, 연결링크-->
-                <svg class="bi d-block bi-envelope mx-auto mb-1" width="24" height="24"><use xlink:href="#envelope"/></svg><!-- My 아이콘-->
-                메시지
-              </a>
-            </li>
-
-
-             <div class="dropdown"> <!-- 드롭다운 적용-->
-              <li>
-              <a href="#" class="nav-link text-white btn btn-info dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><!--'My'글씨 색상변경, 연결링크-->
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg><!-- My 아이콘-->
-                My
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/main2.html">제어</a></li>
+                <li><a class="dropdown-item" href="#">계정관리</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/main.html">로그아웃</a></li>
               </ul>
-            </li>
-              </div>
-
-            <li>
-              <a href="#" class="nav-link text-white"><!--'로그아웃'글씨 색상변경, 연결링크-->
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#door-open-fill"/></svg><!-- My 아이콘-->
-                로그아웃
-              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </header>
+  </nav>
 </section>
+  
+  <header>
+    <div class="px-3 py-2 text-white" style="background-color: #b5e48c;">  <!--헤더 색상-->
+      <!-- <div class="container"> -->
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+           <a href="/main2.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none ">
+             <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> ffff </a>
+          
+          
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+  </header>
+  
+
   <!--헤더 끝!-->
 <br>
   <div class="d-grid gap-2 col-sm-8 mx-auto shadow-sm p-3 mb-5 rounded" style="background-color: #ffffff;"><!--주요 기능이 모여있는 공간 시작-->

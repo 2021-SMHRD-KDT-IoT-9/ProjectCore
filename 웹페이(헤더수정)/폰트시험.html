@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--오픈캠버스 필요한 스크립트 헤드밑에 위치-->
+  <!-- 에러주석 -->
+  <!-- <script src="/docs/5.3/assets/js/color-modes.js"></script> -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.111.3">
+  <title>My Alarm</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+
+
+
+
+  <!-- 에러주석 -->
+  <!-- <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> -->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#712cf9">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .Rectangle-6 {
+      width: 55px;
+      height: 55px;
+      border-radius: 7px;
+      box-shadow: 0 4px 4px 0 rgb(176, 174, 174);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .Rectangle-6 {
+      flex: 0 0 auto;
+      margin-right: 10px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .Rectangle-6 figcaption {
+        font-size: 1em;
+      }
+
+      .Rectangle-6 figcaption.long {
+        font-size: 0.8em;
+      }
+    }
+
+    .Rectangle-6 figcaption {
+      text-align: center;
+    }
+
+    .Rectangle-6 img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .Rectangle-6 figcaption.long {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+
+    /* 내기기 표시 사각형 */
+    .Rectangle-71 {
+      width: 406px;
+      height: 86px;
+      margin: 10px 15px 19px 9px;
+      padding: 14px 55px 4px 10px;
+      border-radius: 10px;
+      background-color: #d9d9d9;
+    }
+
+    /* 내 알림 */
+    .display-6 {
+      text-align: center;
+    }
+
+    nav {
+      width: 300px;
+      position: fixed;
+      right: 0;
+    }
+
+    #test1 {
+      position: fixed;
+      z-index: 3000;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    /* 토글div 설정 */
+    #test2 {
+      width: 100px;
+      position: fixed;
+      right: 0;
+      top: 4px;
+    }
+    #test5 {
+      margin-top: 30px;
+    }
+
+    /* @font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal; */
+
+     /* @font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+    *{
+        /* font-family: 'S-CoreDream-3Light'; */
+        font-family: 'KIMM_Bold';
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+    <p>신규기기등록 추가기기등록 내기기 주방가전 대형가전 사용하시겠습니까</p>
+
+    <span>신규기기등록 추가기기등록 내기기 주방가전 대형가전 사용하시겠습니까</span>
+
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">스케줄</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">콘센트</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            MY
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">제어</a></li>
+            <li><a class="dropdown-item" href="#">계정관리</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">로그아웃</a></li>
+          </ul>
+
+          <a href="/add_device.html" class="btn btn-primary btn-lg" id="add_con">추가기기등록버튼</a>
+
+          <h1 class="display-6">내 기기</h1>
+
+          <div class="container ">
+            <div class="row">
+              <div class="col col-sm-8">
+                <form action="/ajax/signup" method="post" id="myForm">
+                  <div class="form-group has-feedback ">
+                    <label class="control-label" for="id">ID</label><!--아이디 입력창 -->
+                    <input class="form-control" type="text" name="id" id="id" />
+                    <span id="overlapErr" class="help-block">사용할 수 없는 아이디 입니다.</span>
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                  </div>
+                  <br>
+                  <div class="form-group has-feedback ">
+                    <label class="control-label" for="pwd">PASSWORD</label><!--패스워드 입력창-->
+                    <input class="form-control" type="password" name="pwd" id="pwd" />
+                    <span id="pwdRegErr" class="help-block">8글자 이상 입력하세요.</span>
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                  </div>
+                  <br>
+                  <div class="form-group has-feedback ">
+                    <label class="control-label" for="rePwd">Passowrd확인</label><!--패스워드 확인 입력창-->
+                    <input class="form-control" type="password" name="rePwd" id="rePwd" />
+                    <span id="rePwdErr" class="help-block">비밀번호와 일치하지 않습니다. 다시 입력해 주세요.</span>
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                  </div>
+    
+                  <br>
+                  <div class="form-group has-feedback">
+                    <label class="control-label" for="consentName">콘센트 별명</label><!--콘센트 별명 입력창-->
+                    <input type="text" class="form-control" name="consentName" id="consentName">
+                  </div>
+    
+                  <br>
+                  <div class="form-group has-feedback">
+                    <label class="control-label" for="consentId">콘센트 ID</label>
+                    <input type="text" class="form-control" name="consentId" id="consentId">
+                  </div>
+    
+                  <br>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="standby_power" id="standby_power">
+                    <label class="form-check-label" for="standby_power">
+                      대기전력 시 전력 on/off 서비스를 사용하시겠습니까?
+                    </label>
+                  </div>
+</body>
+</html>

@@ -32,7 +32,7 @@
 ##### 8-3. 웹 콘센트 상세 페이지
 ![웹콘센트상세3](https://user-images.githubusercontent.com/122777712/231378575-c8f10508-60e5-43dd-8699-8e745c79178d.png)
 ##### 8-4. 웹 스케줄링 
-![웹스케줄링4](https://user-images.githubusercontent.com/122777712/231378779-ad7699ef-2f0b-4458-9f74-6475f7401ce2.png)
+![웹스케줄링4 수정본](https://user-images.githubusercontent.com/122777712/231405498-eb942219-a1ec-44ac-9045-973b504aae23.png)
 
 ### 🔌9. 모델 개발 트러블 슈팅
 ![모델개발트러블슈팅](https://user-images.githubusercontent.com/122777712/231381476-65526c32-0526-45f9-8402-16047f63f61e.png)

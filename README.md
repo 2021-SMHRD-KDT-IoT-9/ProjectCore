@@ -13,4 +13,31 @@
 ![개발환경사진](https://user-images.githubusercontent.com/122777712/231370799-3433752d-5443-4832-9f1b-a8d910043b4e.png)
 
 ### 📑4. 유스케이스
+![유스케이스사진](https://user-images.githubusercontent.com/122777712/231374099-c247258d-411d-4b8a-bc43-018fe106f849.png)
 
+### 🛠5. 시스템 아키텍처
+![시스템아키텍처사진](https://user-images.githubusercontent.com/122777712/231374510-18dcf5cc-666c-424d-a971-263016796836.png)
+
+### 📁6. ER 다이어그램
+![ER 다이어그램](https://user-images.githubusercontent.com/122777712/231375022-64346861-25b3-4fe0-89e0-5fb381f81589.png)
+
+### 📱7. 모델구현
+![모델구현사진](https://user-images.githubusercontent.com/122777712/231376564-d3776e71-7bec-4a4b-92f7-e6e2845b95a6.png)
+
+### 📲8. WEB 페이지
+##### 8-1. 웹 메인 페이지
+![웹메인페이지1](https://user-images.githubusercontent.com/122777712/231378081-43d61b6a-c159-4743-8a3f-c695d279a859.png)
+##### 8-2. 웹 로비 화면
+![웹로비화면2](https://user-images.githubusercontent.com/122777712/231378328-fc2fe1bc-ad88-483e-87a7-d32e8579b964.png)
+##### 8-3. 웹 콘센트 상세 페이지
+![웹콘센트상세3](https://user-images.githubusercontent.com/122777712/231378575-c8f10508-60e5-43dd-8699-8e745c79178d.png)
+##### 8-4. 웹 스케줄링 
+![웹스케줄링4](https://user-images.githubusercontent.com/122777712/231378779-ad7699ef-2f0b-4458-9f74-6475f7401ce2.png)
+
+### 🔌9. 모델 개발 트러블 슈팅
+![모델개발트러블슈팅](https://user-images.githubusercontent.com/122777712/231381476-65526c32-0526-45f9-8402-16047f63f61e.png)
+
+### 🤼‍♂️10. 팀원 단위 업무분장
+![팀원업무분장](https://user-images.githubusercontent.com/122777712/231382064-cbf5fe00-e8d0-49ad-a80d-0223dbf72361.png)
+
+### 🎞11. 시연영상

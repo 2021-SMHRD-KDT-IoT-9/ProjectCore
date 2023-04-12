@@ -41,3 +41,4 @@
 ![팀원업무분장](https://user-images.githubusercontent.com/122777712/231382064-cbf5fe00-e8d0-49ad-a80d-0223dbf72361.png)
 
 ### 🎞11. 시연영상
+https://youtube.com/shorts/7PfbYg6MEbI?feature=share

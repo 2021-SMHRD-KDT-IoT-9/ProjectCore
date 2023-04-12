@@ -42,3 +42,6 @@
 
 ### 🎞11. 시연영상
 https://youtube.com/shorts/7PfbYg6MEbI?feature=share
+
+### 📖12. 참고문헌
+![참고문헌사진](https://user-images.githubusercontent.com/122777712/231402630-b064b9fd-5b38-4587-a274-bd285ccd1422.png)

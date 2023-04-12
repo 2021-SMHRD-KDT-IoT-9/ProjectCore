@@ -6,4 +6,6 @@
 + 대기전력 자동 차단을 통한 에너지 절약 : 자동화 된 대기전력 차단 시스템으로 에너지 절약 효과를 누릴 수 있다.
 
 ### 🖥2. 주요기능
-![주요기능사진](https://user-images.githubusercontent.com/122777712/231367394-2ad51001-3e75-4d55-923b-1d66cf7507fb.png)
+<img src="https://user-images.githubusercontent.com/122777712/231367394-2ad51001-3e75-4d55-923b-1d66cf7507fb.png" width="1000" height="450">
+
+### ⛏3. 개발환경
